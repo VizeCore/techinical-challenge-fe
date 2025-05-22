@@ -1,56 +1,80 @@
-# Technical Challenge Vize
+**Desafio Técnico - Front-End (React + Vite)**
 
-Seja bem-vindo(a), candidato(a)! Este desafio técnico avalia suas habilidades na construção de uma aplicação dinâmica Next.js com React. Demonstre sua compreensão de conceitos-chave como server-side rendering (SSR), busca de dados, roteamento, desenvolvimento de componentes de interface do usuário e organização de código.
+Seja bem-vindo(a), candidato(a)! Este desafio avalia suas habilidades na construção de uma aplicação dinâmica usando **React** com **Vite** como bundler. Demonstre conhecimento em busca de dados, roteamento, componentização, organização de código e boas práticas de performance.
 
-**Cenário:**
+* * *
 
-Imagine que você está construindo um site apresentando conteúdo do dev.to. Seus usuários devem poder:
+### Cenário
 
-- Navegar por artigos recentes de diferentes comunidades do dev.to.
-- Pesquisar artigos por título, tags e Nome de usuário.
-- Filtrar artigos por state.
-- Visualizar artigos individuais com formatação completa e informações do autor.
-- O site deve se adaptar perfeitamente a diferentes tamanhos de tela e dispositivos.
+Você vai construir um site que consome conteúdo do **dev.to**. Os usuários devem poder:
 
-**Pontos Extras:**
+- Navegar por artigos recentes de diferentes comunidades.
+- Pesquisar artigos por **título**, **tags** e **nome de usuário**.
+- Filtrar artigos por **estado** (published, draft, etc.).
+- Visualizar um artigo individual com formatação completa e informações do autor.
+- Usar o site confortavelmente em **qualquer tamanho de tela**.
 
-- Implemente o server-side rendering (SSR) para melhorar o SEO e o carregamento inicial da página.
-- Estratégia de gerenciamento de cache de dados (preferencialmente SWR ou React Query)
-- Adicione paginação para lidar com a exibição de um grande número de postagens.
-- Implemente testes E2E com pelo menos um caso de sucesso.
+* * *
 
-**Requisitos Técnicos:**
+### Pontos Extras (opcionais, mas contam muito)
 
-- Use Next.js e React para construir o front-end da aplicação.
-- Você pode escolher qualquer biblioteca CSS-in-JS como Styled Components, Emotion para estilização, ou bibliotecas de UI como MUI e Bootstrap.
-- Sinta-se à vontade para utilizar quaisquer bibliotecas adicionais que considere úteis, mas documente suas escolhas e motivações.
+| Tema | Sugestão |
+| --- | --- |
+| **Renderização no servidor (SSR)** | Use algo como *vite-plugin-ssr* ou *react-ssr-vite* para melhorar SEO e carregamento inicial. |
+| **Gerenciamento de cache** | React Query, TanStack Query ou SWR. |
+| **Paginação** | Infinit scroll ou botões “Próximo / Anterior”. |
+| **Testes E2E** | Cypress ou Playwright com pelo menos um fluxo de sucesso. |
 
-**Instruções de Envio:**
+<button class="bg-token-bg-primary hover:bg-token-bg-tertiary text-token-text-secondary my-1 rounded-sm p-1 transition-opacity group-[:not(:hover):not(:focus-within)]:pointer-events-none group-[:not(:hover):not(:focus-within)]:opacity-0"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-md-heavy"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg></button>
 
-- Envie seu projeto concluído como um repositório do GitHub.
-- Inclua um arquivo README descrevendo sua abordagem, quaisquer decisões relevantes e quaisquer recursos adicionais que você implementou.
-- Certifique-se de documentar seu código corretamente e seguir boas práticas de codificação.
+* * *
 
-**Critérios de Avaliação:**
+### Requisitos Técnicos
 
-Seu envio será avaliado com base nos seguintes critérios:
+1. **React 18 + Vite** para o front-end.
+2. Roteamento com **React Router v6** (ou outra solução que preferir).
+3. Qualquer biblioteca de UI (MUI, Mantine, Shadcn, Bootstrap) **ou** CSS-in-JS (Styled-Components, Emotion).
+4. Pode adicionar outras dependências; documente no README o *porquê*.
+5. Testes unitários com **Vitest + Testing-Library**.
 
-- **Funcionalidade:** Você implementou os recursos principais e os pontos extras (se houver) com sucesso?
-- **Qualidade do Código:** Seu código está bem organizado, legível e eficiente?
-- **Desempenho:** A aplicação carrega rapidamente e renderiza com fluidez?
-- **Testes:** Você implementou testes unitários para garantir a qualidade do código?
-- **Documentação:** Seu arquivo README está claro e informativo?
+* * *
 
-**Lembre-se:** O objetivo deste desafio é mostrar suas habilidades e capacidade de resolução de problemas em um cenário prático. Encorajamos você a ser criativo(a) e demonstrar sua paixão por construir aplicativos web atraentes.
+### Instruções de Envio
 
-**Prazo:**
+1. Faça um *fork* ou crie um repositório GitHub público.
+2. Inclua um **README** explicando:
 
-Envie seu projeto concluído dentro de 2 dias a partir de agora com a deadline no dia 02/02/2024 às 23:59. Estamos ansiosos para revisar seus envios!
+    - Sua arquitetura, principais decisões e trade-offs.
+    - Como rodar em modo dev, build de produção, testes e lint.
+    - Quais requisitos/pontos extras foram entregues.
+3. Mantenha o código limpo, documentado e organizado.
 
-**Observações Adicionais:**
+* * *
 
-- Você pode encontrar o endpoint da API para buscar o conteúdo das postagens do blog em [https://developers.forem.com/api](https://developers.forem.com/api).
-- Sinta-se à vontade para usar qualquer mockup de design ou guias visuais que desejar para a interface do usuário.
-- Encorajamos você a fazer qualquer pergunta que possa ter durante o processo do desafio.
+### Critérios de Avaliação
 
-Boa sorte e boa programação!
+| Peso | Critério | O que observaremos |
+| --- | --- | --- |
+| ★★★ | **Funcionalidade** | Se todos os requisitos (e extras) funcionam sem erros. |
+| ★★☆ | **Qualidade do Código** | Clareza, modularização, tipagem (TS opcional), padrão de commits. |
+| ★★☆ | **Performance** | Boa pontuação no Lighthouse, lazy-loading, code-splitting. |
+| ★★☆ | **Testes** | Cobertura mínima dos componentes críticos + E2E funcional. |
+| ★★☆ | **Documentação** | README esclarecedor e processo de setup simples. |
+
+<button class="bg-token-bg-primary hover:bg-token-bg-tertiary text-token-text-secondary my-1 rounded-sm p-1 transition-opacity group-[:not(:hover):not(:focus-within)]:pointer-events-none group-[:not(:hover):not(:focus-within)]:opacity-0"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-md-heavy"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg></button>
+
+* * *
+
+### Prazo
+
+Entregue dentro de **2 dias corridos** após receber este enunciado.
+
+* * *
+
+### Observações Adicionais
+
+- API oficial: [https://developers.forem.com/api](https://developers.forem.com/api)
+- Sinta-se livre para criar mockups ou seguir guias de design.
+- Qualquer dúvida durante o desafio, pergunte!
+
+Boa sorte e bom código ✨
